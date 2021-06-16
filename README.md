@@ -18,5 +18,3 @@ P.S an example of \wamp64\bin\php\php7.2.10 would be C:\Program Files\wamp64\bin
 To whom it may concern. This was intended to be a three person project however ended up being a two person project, because of this and time constraint not everything works as intended (about 80-90% of it does.)
 
 MongoDB is requried for the database
-
-Ignore commits from Delete Playground directory to Add files via upload, human error 16/06/2021
