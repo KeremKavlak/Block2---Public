@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+	<title> Maze game!</title>
+	<meta charset="utf-8"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	
+	<style>
+	body{
+	background-color: #3C342F;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+
+	margin: 20px;
+
+	}
+	header
+	{
+	text-align:center;
+	}
+	main
+	{
+
+	margin-left:auto;
+	margin-right: auto;
+	width:960px;
+	margin-bottom:100px;
+	}
+	.center
+	{
+	margin: 0 auto;
+	}
+	</style>
+
+</head>
+
+<body>
+<main>
+
+<header>
+	<h1> Web Development -  Coursework 2 E-commerce Site <h1>
+	<h2> Raport by Lukasz Wlosek and Kerem Kavlak <h2>
+	
+</header>
+<br/>
+<br/>
+<aritcle>
+	<u> <h2> Front-end </h2> </u>
+	 <img width="450" height="300" src="imgs/screen1.jpg" >
+	 <img width="450" height="300" src="imgs/screen2.jpg" >
+	 <img width="450" height="300" src="imgs/screen3.jpg" >
+	 <img width="450" height="300" src="imgs/screen4.jpg" >
+	 <img width="450" height="300" src="imgs/screen5.jpg" >
+	 <img width="450" height="300" src="imgs/screen6.jpg" >
+       
+	<ul>
+		<li> Our game is a maze game, so the ecommerce website will include different products helping the user play the game for the money spent. The screenshots obove show the products, basket and checkout for the user. The customer can sign up and log in to track his/hers purchases and can edit their details after signing up if needed to.</li>
+	</ul>
+	<b> <h3> Product search </h3> </b>
+	<video width="960" height="400" controls>
+        <source src="imgs/sorting.WebM" type="video/WebM">
+		</video> 
+	<ul>
+		<li> The search box is implemented into javascript into in the shop.php(line 20-30) which call the search function (line 107-127). </li>
+		<li> Using AJAX the javascript updates the html file comunicating to the find_customers.php file posting the criteria entered into the search box </li>
+		
+	</ul>
+	<b><h3> Search result storing </h3></b>
+	<video width="960" height="400" controls>
+        <source src="imgs/sorting2.WebM" type="video/WebM">
+		</video> 
+	<ul>
+		<li> Clicking on the low to high button in the shop.php file  will redirect into a sort1.php and find the values of prices in the shoping products in ascending order sort1.php(line 17) </li>
+		<li> Clicking on the highto low button in the shop.php file  will redirect to sort1.php and find the values of prices in the shoping products in descending order sort2.php(line 17) </li>
+	</ul>
+	<b><h3> Shopping basket </h3></b>
+	<video width="960" height="400" controls>
+        <source src="imgs/basket2.WebM" type="video/WebM">
+		</video> 
+	<ul>
+		<li> Clicking on the Add:, in the shop.php(line 50-52) sends the id and product name to basket.js, inside basket.js a session storage is made for a basket.  </li>
+		<li> User can decide to empty the basket and will delete the session storage basket.js(line 60-65).</li>
+		<li> Checkout.php is where the magic happens with making a new collection of purchases in the database. </li>
+	</ul>
+	
+	<u> <h2> Customer </h2> </u>
+	<h3> Log in/out </h3>
+	 <video width="960" height="400" controls>
+        <source src="imgs/login.WebM" type="video/WebM">
+		</video> 
+	<ul>
+		<li> In the singup.php all the validation and form box is based. Using ajax the data is posted to the server and is posted to singing.php</li>
+		<li> Once in the database user can log in, the code for these functions are in login.php which combine into check-login.php, and customer_login.php </li>
+		<li> The logout.php is called if the user presses the logout button, this destroys the current session. </li>
+	
+	
+	</ul>
+	 <h3>  Edit details </h3>
+	<video width="960" height="400" controls>
+        <source src="imgs/updating.WebM" type="video/WebM">
+	</video> 
+	
+	<ul>
+		<li> After logging in the user details can be changed, this is called by the fech_customer.php code. and posts the information to save_customer.php which overwrites the current information stored in the database.   </li>
+	
+
+	
+	</ul>
+
+</article>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+	<hr style="border-top: dotted 1px;" />
+	
+<h3><u> Additional information</u> </h3>
+	<ul>
+		<li> Google fonts <a href="https://fonts.google.com/" target="_blank"> :https://fonts.google.com/ </a>→ used fonts from this website to make it look better </li>
+		<li>Fontello:http://fontello.com/ → used image fonts so the images dont have a background and are easy to edit, just like normal text! </li>
+		<li> Bootstrap <a href=":https://getbootstrap.com/" target="_blank">:https://getbootstrap.com/ </a> → instead of using CSS grid I made my life easier by using bootstrap which frovides a ready CSS file to use on my images to shrink them while shrinking the size of the pixels displayed on the screen. </li>
+	</ul>
+	<hr style="border-top: dotted 1px;" />
+
+</main>
+<footer>
+
+</footer>
+
+</body>
+</html>
